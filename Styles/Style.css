@@ -101,11 +101,11 @@ header{
     background-color: rgb(236, 214, 196, 0.53);
     padding: 1rem;
     border-radius: 8px;
+    border: 0.1px solid #FFF2E7;
     width: fit-content;
     color: #2F2325;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.363);
 }
-
 
 
 .main__presentation__img__container{
@@ -126,7 +126,7 @@ header{
 
 .main__list__title{
     padding-top: 8%;
-    width: 20%;
+    width: 30%;
     border-top: 0.4px solid #FFF2E7;
     font-family: var(--title-font);
     font-size: 1.5rem;
