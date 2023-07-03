@@ -11,10 +11,11 @@
 
 <body>
     <header>
-        <a href="/index.html">
-        <img class="img1 header__logo" src="/assets/imgs/Vector.png" alt="Logo Ballerini">
+        <a href="/index.html" class="logo__button__container">
+            <img class="img1 header__logo" src="/assets/imgs/Vector.png" alt="Logo Ballerini">
         </a>
-        <nav class="header__nav">
+        <i id="Menu__burguer" onclick="clickMenu()" class="menu__icon"><img id="imgMenu" class="Menu__img" src="/assets/imgs/menu.png" alt="Menu Hamburguer"> </i>
+        <nav id="menu__burguer__nav" class="header__nav">
             <a class="header__nav__link" href="https://disc.gg">Comunidade Ballerini</a>
             <a class="header__nav__link" href="https://yout.com">Tutorial</a>
             <a class="header__nav__link" href="https://github.com">Open Source</a>
@@ -27,7 +28,8 @@
             <div class="main__presentation__text">
                 <h1 class="main__presentation__text__title">Balle Bot</h1>
                 <p class="main__presentation__text__text">Deixe a sua comunidade segura de um jeito fácil</p>
-                <a class="main__presentation__text__text main__presentation__button" href="https://discord.com">Me adicione!</a>
+                <a class="main__presentation__text__text main__presentation__button" href="https://discord.com">Me
+                    adicione!</a>
             </div>
             <div class="main__presentation__img__container">
                 <img class="main__presentation__img" src="/assets/imgs/Group 4.png" alt="BalleBot">
@@ -36,10 +38,13 @@
         <div>
             <ul class="main__list">
                 <h2 class="main__list__title">O que ela faz por você?</h2>
-                <li>1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</li>
-                <li>2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade
+                <li>1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são
+                    robôs</li>
+                <li>2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem
+                    enviados na comunidade
                 </li>
-                <li>3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</li>
+                <li>3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem
+                </li>
             </ul>
         </div>
     </main>
@@ -47,6 +52,18 @@
     <footer>
         <img src="/assets/imgs/BALLERINI.png" alt="rodapé com titulo Ballerini">
     </footer>
+    <script>
+        function clickMenu () {
+            if(menu__burguer__nav.style.display == 'none') {
+                menu__burguer__nav.style.display = 'flex'
+                document.getElementById("imgMenu").src = "/assets/imgs/menu (1).png"
+            }
+            else{
+                menu__burguer__nav.style.display = 'none'
+                document.getElementById("imgMenu").src = "/assets/imgs/menu.png"
+            }
+        }
+    </script>
 </body>
 
 </html>

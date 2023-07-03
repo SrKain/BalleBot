@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
-:root{
+
+:root {
     --nav-font: 'Sarala', sans-serif;
     --title-font: 'Righteous', cursive;
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
-    background-image: linear-gradient(400deg,#2F2325, #8E5D52);
-}  
+body {
+    background-image: linear-gradient(400deg, #2F2325, #8E5D52);
+}
 
-header{
+header {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     padding: 1% 0 1% 10%;
@@ -27,16 +28,25 @@ header{
     align-items: center;
 }
 
-.img1{
+.img1 {
     box-sizing: border-box;
     height: auto;
 }
 
-.header__logo{
+.logo__button__container{
+    display: block;
+}
+
+.header__logo {
+    display: block;
     justify-content: center;
 }
 
-.header__nav{
+.menu__icon{
+    display: none;
+}
+
+.header__nav {
     display: flex;
     flex-direction: row;
     gap: 10%;
@@ -54,38 +64,38 @@ header{
     color: #FFF2E7;
     font-size: 1.125rem;
     border-radius: 8px;
-    border:0.4px solid #FFF2E7;
+    border: 0.4px solid #FFF2E7;
     padding: 2%;
     transition: all 0.3s;
 }
 
-.main__presentation{
+.main__presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 0 3% 10%;
     align-items: center;
 }
 
-.main__presentation__text{
+.main__presentation__text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
 }
 
-.main__presentation__text__title{
+.main__presentation__text__title {
     font-family: var(--title-font);
     font-size: 4rem;
     color: #FFF2E7;
 }
 
-.main__presentation__text__text{
+.main__presentation__text__text {
     font-family: var(--nav-font);
     font-size: 1.5rem;
     color: #ECD6C4;
 }
 
-.main__presentation__button{
+.main__presentation__button {
     transition: all 0.3s;
     background-color: #ECD6C4;
     padding: 0.875rem;
@@ -96,7 +106,7 @@ header{
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.363);
 }
 
-.main__presentation__button:hover{
+.main__presentation__button:hover {
     transition: all 0.3s;
     background-color: rgb(236, 214, 196, 0.53);
     padding: 1rem;
@@ -108,11 +118,11 @@ header{
 }
 
 
-.main__presentation__img__container{
+.main__presentation__img__container {
     text-align: center;
 }
 
-.main__list{
+.main__list {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -124,7 +134,7 @@ header{
     align-items: center;
 }
 
-.main__list__title{
+.main__list__title {
     padding-top: 8%;
     width: 30%;
     border-top: 0.4px solid #FFF2E7;
@@ -135,9 +145,83 @@ header{
 }
 
 
-footer{
+footer {
     text-align: center;
     border-top: 0.4px solid #FFF2E7;
     padding: 2% 0 2% 0;
 
+}
+
+@media (max-width:764px) {
+    header{
+        padding: 3% 0 2% 0;
+        margin: 0;
+    }
+
+    .logo__button__container{
+        justify-self: center;
+    }
+
+    .menu__icon{
+        transition: all 0.2s;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .Menu__img{
+        transition: all 0.2s;
+        height: 100%;
+    }
+
+    .header__nav{
+        margin: 2% 0 2% 0;
+        padding: 2% 0 2% 0;
+        gap: 0.5rem;
+        text-align: center;
+        transition: all 0.2s;
+        display: none;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+    }
+
+    .header__nav__link{
+        align-self: center;
+        border-bottom: 0.4px solid rgba(255, 242, 231, 0.541);
+        width: 100%;
+        background-color: rgba(112, 67, 57, 0.384);
+    }
+
+    .main__presentation{
+        padding-top: 0.5rem;
+        gap: 0.4rem;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .main__presentation__button{
+        padding: 0.5rem
+    }
+
+    .main__presentation__img__container{
+        width: 100%;
+    }
+
+    .main__presentation__img{
+        width: 100%;
+    }
+
+    .main__list__title{
+        width: 50%;
+    }
+
+    .main__list{
+        margin: 5%;
+    }
+
+    ul{
+        list-style: none;
+    }
 }
