@@ -21,11 +21,18 @@ body {
 }
 
 header {
+    transition: all 0.5s;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     padding: 1% 0 1% 10%;
     border-bottom: 0.4px solid #FFF2E7;
     align-items: center;
+}
+
+header:hover {
+    transition: all 0.5s;
+    grid-template-columns: 1fr 2fr;
+    background-color: #ffffff13;
 }
 
 .img1 {
@@ -35,6 +42,7 @@ header {
 
 .logo__button__container{
     display: block;
+    width: max-content;
 }
 
 .header__logo {
@@ -65,8 +73,9 @@ header {
     font-size: 1.125rem;
     border-radius: 8px;
     border: 0.4px solid #FFF2E7;
-    padding: 2%;
-    transition: all 0.3s;
+    padding: 0% 2% 0% 2%;
+    transition: all 0.6s;
+    background-color: #ffffff38;
 }
 
 .main__presentation {
