@@ -14,7 +14,8 @@
         <a href="/index.html" class="logo__button__container">
             <img class="img1 header__logo" src="/assets/imgs/Vector.png" alt="Logo Ballerini">
         </a>
-        <i id="Menu__burguer" onclick="clickMenu()" class="menu__icon"><img id="imgMenu" class="Menu__img" src="/assets/imgs/menu.png" alt="Menu Hamburguer"> </i>
+        <i id="Menu__burguer" onclick="clickMenu()" class="menu__icon"><img id="imgMenu" class="Menu__img"
+                src="/assets/imgs/menu.png" alt="Menu Hamburguer"> </i>
         <nav id="menu__burguer__nav" class="header__nav">
             <a class="header__nav__link" href="https://disc.gg">Comunidade Ballerini</a>
             <a class="header__nav__link" href="https://yout.com">Tutorial</a>
@@ -53,14 +54,14 @@
         <img src="/assets/imgs/BALLERINI.png" alt="rodapé com titulo Ballerini">
     </footer>
     <script>
-        function clickMenu () {
-            if(menu__burguer__nav.style.display == 'none') {
-                menu__burguer__nav.style.display = 'flex'
-                document.getElementById("imgMenu").src = "/assets/imgs/menu (1).png"
-            }
-            else{
+        function clickMenu() {
+            if (menu__burguer__nav.style.display == 'flex') {
                 menu__burguer__nav.style.display = 'none'
                 document.getElementById("imgMenu").src = "/assets/imgs/menu.png"
+            }
+            else {
+                menu__burguer__nav.style.display = 'flex'
+                document.getElementById("imgMenu").src = "/assets/imgs/menu (1).png"
             }
         }
     </script>
