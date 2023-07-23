@@ -58,6 +58,7 @@ header:hover {
     display: flex;
     flex-direction: row;
     gap: 10%;
+    margin-right: 10%;
 }
 
 .header__nav__link {
