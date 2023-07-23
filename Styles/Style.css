@@ -23,7 +23,7 @@ body {
 header {
     transition: all 0.5s;
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns: 1fr 2fr;
     padding: 1% 0 1% 10%;
     border-bottom: 0.4px solid #FFF2E7;
     align-items: center;
